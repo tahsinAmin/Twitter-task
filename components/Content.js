@@ -46,12 +46,23 @@ const data = [
       repeat:"3.2K",
       heart:"3.2K",
    },
+   {
+      id:5,
+      name:"Kevin Hart",
+      username:"@KevinHart4Real",
+      verified:true,
+      time: "12h",
+      msgBody: "Just posted a photo https://youtu.be/9jX?sasdzczx/...",
+      msg:"3.2K",
+      repeat:"3.2K",
+      heart:"3.2K",
+   },
 ]
 
 function Content() {
    // console.log(data);
    return (
-      <div className="w-screen">
+      <div className="w-full">
          {data.map(({id, name, username, verified, time, msgBody, msg, repeat, heart}) => (
             <div key={id} className="h-40 flex justify-between border border-t-1 border-b-1">
             <div className="h-auto w-1/5 py-4 flex justify-center">
