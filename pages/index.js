@@ -12,10 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="md:inline-flex w-screen">
+      <div className="md:inline-flex w-screen md:pr-14 md:tablet">
         <Sidebar/>
-        {/* <div className='md:inline overflow-y-scroll md:w-11/12'> */}
-        <div className='w-full md:w-11/12 border h-screen overflow-y-scroll'>
+        <div className='w-full md:w-5/6 border h-screen overflow-y-scroll'>
           <Header/>
           <Content/>
         </div>
