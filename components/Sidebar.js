@@ -4,7 +4,7 @@ import { BellIcon, UserIcon, HomeIcon, DotsHorizontalIcon, BookmarkIcon, ViewLis
 import SidebarRow from './SidebarRow'
 function Sidebar() {
    return (
-      <div className="hidden  rounded-full h-screen md:flex flex-col justify-between xl:py-3 items-center">
+      <div className="hidden rounded-full h-screen sm:flex flex-col justify-between  sm:py-3 md:py-1 xl:py-3 items-center">
             <div className="s">
                <div className="flex flex-col items-center space-y-4">
                   <div className="flex flex-col space-y-4 lg:pt-4">

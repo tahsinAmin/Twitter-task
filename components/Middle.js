@@ -3,7 +3,7 @@ import Feed from '../components/Feed'
 
 function Middle() {
    return (
-      <div className='w-full md:w-5/6 xl:w-5/12 border h-screen overflow-y-auto scrollbar-hide'>
+      <div className='w-full border h-screen overflow-y-auto scrollbar-hide'>
          <Header/>
          <Feed/>
       </div>

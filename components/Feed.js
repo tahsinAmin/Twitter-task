@@ -3,8 +3,7 @@ import InputBox from "./InputBox";
 
 function Feed() {
    return (
-      <div className="w-full">
-
+      <div className="w-full ">
          {/* inputBox */}
          <InputBox/>
          
