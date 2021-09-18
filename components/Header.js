@@ -1,4 +1,5 @@
-import {CgProfile } from 'react-icons/cg'
+// import Image from 'next/image'
+import { UserCircleIcon } from '@heroicons/react/solid'
 import { WiStars } from 'react-icons/wi'
 
 // const handleChange = (e) => {
@@ -8,9 +9,16 @@ import { WiStars } from 'react-icons/wi'
 
 function Header() {
    return (
-      <header className='w-full sticky top-0 bg-white shadow-sm flex justify-between items-center  md:h-12 p-4'>
+      <header className='w-full sticky top-0 z-50 bg-white shadow-sm flex justify-between border-gray-100 border-t items-center md:h-12 p-4'>
          <div className="flex items-center space-x-4">
-            <CgProfile className='text-blue-200 md:hidden' size='2.5em'/>
+            <UserCircleIcon className='text-blue-200 md:hidden h-10'/>
+            {/* <Image src={`https://source.unsplash.com/50x50/?nature,water,mountain,landscape`}
+               width={40}
+               height={40}
+               layout="fixed"
+               className='rounded-full md:hidden'
+            /> */}
+
             {/* refresh once clicked */}
             <h2
              className="font-bold text-2xl md:text-lg text-gray-800 cursor-pointer"

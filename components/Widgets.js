@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
    SearchIcon,
    CogIcon
@@ -10,21 +11,21 @@ import {
       <div className='hidden lg:flex flex-col py-2 px-7 space-y-2 max-w-[800px] xl:min-w-[400px]'>
 
          {/* Searchbar */}
-         <div className="md:inline-flex items-center rounded-full p-2 border-2">
+         <div className="md:flex items-center rounded-full p-2 border-2">
             <SearchIcon className="h-6 text-gray-600" />
             <input
-               className="lg:inline-flex ml-2 bg-transparent outline-none placeholder-gray-500  flex-shrink"
+               className="w-full ml-2 bg-transparent outline-none placeholder-gray-500 flex-shrink"
                placeholder="Search Twitter"
             />
          </div>
          
          {/* Trendings */}
-         <div className="flex-col rounded-2xl bg-gray-100">
+         <div className="flex-col rounded-2xl bg-gray-50">
             <div className='flex justify-between items-center px-4 py-2'>
                <h4 className='text-xl font-bold'>Trends For You</h4>
                <CogIcon className='h-6 w-6'/>
             </div>
-            <div className='flex-col hover:bg-gray-200 py-4 px-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
                <div className='flex justify-between text-gray-500'>
                   <p className='text-xs font-semibold'>Trending in Bangladesh</p>
                   <DotsHorizontalIcon className='h-4 w-4'/>
@@ -33,7 +34,7 @@ import {
                <p className='text-xs font-semibold text-gray-500'>19.2K Tweets</p>
             </div>
 
-            <div className='flex-col hover:bg-gray-200 px-4 py-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 px-4 py-4 space-y-1 cursor-pointer'>
                <div className='flex justify-between text-gray-500'>
                   <p className='text-xs font-semibold'>Trending in Bangladesh</p>
                   <DotsHorizontalIcon className='h-4 w-4'/>
@@ -41,27 +42,33 @@ import {
                <h4 className='text-sm font-semibold'>#AurraBhatnagarBadoni</h4>
                <p className='text-xs font-semibold text-gray-500'>19.2K Tweets</p>
             </div>
-
-            <p className='text-sm text-blue-500 hover:underline px-4 py-4 cursor-pointer'>Show more</p>
+            <div className='px-4 py-4'>
+               <span className='text-sm text-blue-500 hover:underline cursor-pointer'>Show more</span>
+            </div>
          </div>
 
          {/* Who to follow */}
-         <div className="who-to-follow flex-col rounded-2xl bg-gray-100">
+         <div className="who-to-follow flex-col rounded-2xl bg-gray-50">
 
             <h4 className='text-xl font-bold px-4 py-2'>Who to follow</h4>
 
-            <div className='flex-col hover:bg-gray-200 py-4 px-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
                <div className='flex justify-between text-gray-500'>
                   <div className="">
                      <div className="flex justify-between"> 
                         <div className="flex justify-center">
-                           <div className="rounded-full h-12 w-12 flex items-center justify-center bg-gray-400 "></div>
+                           <Image src={`https://source.unsplash.com/50x50/?nature,water,mountain,landscape`}
+                              width={50}
+                              height={50}
+                              layout="fixed"
+                              className='rounded-full'
+                           />
                         </div>
 
                         <div className="pr-4 flex flex-col justify-between space-y-2">               
                            <div>
                               <div className="mb-1 flex justify-between items-center">
-                                 <div className='flex-col hover:bg-gray-200 px-2 cursor-pointer'>
+                                 <div className='flex-col hover:bg-gray-100 px-2 cursor-pointer'>
                                     <div className="flex items-center space-x-1">
                                        <h3 className='text-base font-bold text-gray-800 '>ESPN</h3>
                                        <GoVerified color='blue'/>
@@ -81,18 +88,23 @@ import {
 
             
 
-            <div className='flex-col hover:bg-gray-200 py-4 px-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
                <div className='flex justify-between text-gray-500'>
                   <div className="">
                      <div className="flex justify-between"> 
                         <div className="flex justify-center">
-                           <div className="rounded-full h-12 w-12 flex items-center justify-center bg-gray-400 "></div>
+                                                      <Image src={`https://source.unsplash.com/50x50/?nature,water,mountain,landscape`}
+                              width={50}
+                              height={50}
+                              layout="fixed"
+                              className='rounded-full'
+                           />
                         </div>
 
                         <div className="pr-4 flex flex-col justify-between space-y-2">               
                            <div>
                               <div className="mb-1 flex justify-between items-center">
-                                 <div className='flex-col hover:bg-gray-200 px-2 cursor-pointer'>
+                                 <div className='flex-col hover:bg-gray-100 px-2 cursor-pointer'>
                                     <div className="flex items-center space-x-1">
                                        <h3 className='text-base font-bold text-gray-800 '>ESPN</h3>
                                        <GoVerified color='blue'/>
@@ -110,18 +122,23 @@ import {
                </div>
             </div>
 
-            <div className='flex-col hover:bg-gray-200 py-4 px-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
                <div className='flex justify-between text-gray-500'>
                   <div className="">
                      <div className="flex justify-between"> 
                         <div className="flex justify-center">
-                           <div className="rounded-full h-12 w-12 flex items-center justify-center bg-gray-400 "></div>
+                                                      <Image src={`https://source.unsplash.com/50x50/?nature,water,mountain,landscape`}
+                              width={50}
+                              height={50}
+                              layout="fixed"
+                              className='rounded-full'
+                           />
                         </div>
 
                         <div className="pr-4 flex flex-col justify-between space-y-2">               
                            <div>
                               <div className="mb-1 flex justify-between items-center">
-                                 <div className='flex-col hover:bg-gray-200 px-2 cursor-pointer'>
+                                 <div className='flex-col hover:bg-gray-100 px-2 cursor-pointer'>
                                     <div className="flex items-center space-x-1">
                                        <h3 className='text-base font-bold text-gray-800 '>ESPN</h3>
                                        <GoVerified color='blue'/>
@@ -139,7 +156,9 @@ import {
                </div>
             </div>
 
-            <p className='text-sm text-blue-500 hover:underline px-4 py-4 cursor-pointer'>Show more</p>
+            <div className='px-4 py-4'>
+               <span className='text-sm text-blue-500 hover:underline cursor-pointer'>Show more</span>
+            </div>
          </div>
       
          {/* Footer */}
