@@ -14,7 +14,7 @@ function Sidebar() {
                   <div className='px-4'>
                      <FaTwitter className=' cursor-pointer h-8 w-8 text-blue-500 hover:text-blue-600 hover:scale-110'/> 
                   </div>
-                  <div className='flex cursor-pointer items-center space-x-4 hover:bg-gray-200 rounded-full px-4 py-2'>
+                  <div className='flex cursor-pointer items-center space-x-4 hover:bg-gray-200 rounded-full px-4 py-2 transition duration-700 ease-out'>
                      <HomeIcon className='h-`7 w-7 text-gray-800'/>
                      <p className="hidden xl:inline-flex text-xl font-semibold">Home</p>
                   </div>

@@ -21,14 +21,14 @@ function Header() {
 
             {/* refresh once clicked */}
             <h2
-             className="font-bold text-2xl md:text-lg text-gray-800 cursor-pointer"
+             className="font-bold text-2xl md:text-lg text-gray-800"
             //  onClick={(e)=> handleChange}
             >
                Home
             </h2>
          </div>
 
-         <div className="sparkle" ><WiStars size='2.5em'/></div>
+         <div className="sparkle  cursor-pointer p-0.5  rounded-full hover:bg-gray-100" ><WiStars size='2.5em'/></div>
       </header>
    )
 }

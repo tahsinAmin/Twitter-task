@@ -11,7 +11,7 @@ import {
       <div className='hidden lg:flex flex-col py-2 px-7 space-y-2 max-w-[800px] xl:min-w-[400px]'>
 
          {/* Searchbar */}
-         <div className="md:flex items-center rounded-full p-2 border-2">
+         <div className="md:flex items-center rounded-full p-2 focus:border-2 bg-gray-50 focus:border-gray-100">
             <SearchIcon className="h-6 text-gray-600" />
             <input
                className="w-full ml-2 bg-transparent outline-none placeholder-gray-500 flex-shrink"
@@ -25,7 +25,7 @@ import {
                <h4 className='text-xl font-bold'>Trends For You</h4>
                <CogIcon className='h-6 w-6'/>
             </div>
-            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer transition duration-700 ease-out'>
                <div className='flex justify-between text-gray-500'>
                   <p className='text-xs font-semibold'>Trending in Bangladesh</p>
                   <DotsHorizontalIcon className='h-4 w-4'/>
@@ -34,7 +34,7 @@ import {
                <p className='text-xs font-semibold text-gray-500'>19.2K Tweets</p>
             </div>
 
-            <div className='flex-col hover:bg-gray-100 px-4 py-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 px-4 py-4 space-y-1 cursor-pointer transition duration-700 ease-out'>
                <div className='flex justify-between text-gray-500'>
                   <p className='text-xs font-semibold'>Trending in Bangladesh</p>
                   <DotsHorizontalIcon className='h-4 w-4'/>
@@ -52,8 +52,8 @@ import {
 
             <h4 className='text-xl font-bold px-4 py-2'>Who to follow</h4>
 
-            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
-               <div className='flex justify-between text-gray-500'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer transition duration-700 ease-out'>
+               <div className='flex justify-between text-gray-500 '>
                   <div className="">
                      <div className="flex justify-between"> 
                         <div className="flex justify-center">
@@ -81,14 +81,14 @@ import {
                      </div>
                   </div>
                   <div className="flex items-center">
-                     <button className="py-3 mr-3 px-5 bg-gray-900 text-xs font-bold text-white rounded-full">Follow</button>
+                     <button className="py-3 mr-3 px-5 bg-gray-900 text-xs font-bold text-white rounded-full  hover:opacity-90">Follow</button>
                   </div>
                </div>
             </div>
 
             
 
-            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer transition duration-700 ease-out'>
                <div className='flex justify-between text-gray-500'>
                   <div className="">
                      <div className="flex justify-between"> 
@@ -117,13 +117,13 @@ import {
                      </div>
                   </div>
                   <div className="flex items-center">
-                     <button className="py-3 mr-3 px-5 bg-gray-900 text-xs font-bold text-white rounded-full">Follow</button>
+                     <button className="py-3 mr-3 px-5 bg-gray-900 text-xs font-bold text-white rounded-full  hover:opacity-80">Follow</button>
                   </div>
                </div>
             </div>
 
-            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer'>
-               <div className='flex justify-between text-gray-500'>
+            <div className='flex-col hover:bg-gray-100 py-4 px-4 space-y-1 cursor-pointer transition duration-700 ease-out'>
+               <div className='flex justify-between text-gray-500 '>
                   <div className="">
                      <div className="flex justify-between"> 
                         <div className="flex justify-center">
@@ -151,7 +151,7 @@ import {
                      </div>
                   </div>
                   <div className="flex items-center">
-                     <button className="py-3 mr-3 px-5 bg-gray-900 text-xs font-bold text-white rounded-full">Follow</button>
+                     <button className="py-3 mr-3 px-5 bg-gray-900 text-xs font-bold text-white rounded-full  hover:opacity-80">Follow</button>
                   </div>
                </div>
             </div>
