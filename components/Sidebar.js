@@ -1,30 +1,38 @@
-import { FiTwitter }  from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
+import { AiFillTwitterCircle }  from 'react-icons/ai'
+import { SiTwitter }  from 'react-icons/si'
 import { HiOutlineUserCircle }  from 'react-icons/hi'
+
 import { BellIcon, UserIcon, HomeIcon, DotsHorizontalIcon, BookmarkIcon, ViewListIcon, HashtagIcon, MailIcon } from '@heroicons/react/solid'
 import SidebarRow from './SidebarRow'
 function Sidebar() {
    return (
-      <div className="hidden rounded-full h-screen sm:flex flex-col justify-between  sm:py-3 md:py-1 xl:py-3 items-center">
-            <div className="s">
-               <div className="flex flex-col items-center space-y-4">
-                  <div className="flex flex-col space-y-4 lg:pt-4">
-                     <SidebarRow className='mb-2' Icon={FiTwitter} title=""/>
-                     <SidebarRow Icon={HomeIcon} title="Home"/>
-                     <SidebarRow Icon={HashtagIcon} title="Explore"/>
-                     <SidebarRow Icon={BellIcon} title="Notifications"/>
-                     <SidebarRow Icon={MailIcon} title="Mail"/>
+      <div className="sidebar">
+
+         <div className="rounded-full h-screen sm:flex flex-col justify-between sm:py-3 md:py-1 lg:py-0 md:px-4 items-center"> {/* class: hidden*/}
+            <div className="flex flex-col items-center space-y-4">
+               <div className="flex flex-col space-y-3 lg:pt-3">
+                  <div className='px-4'>
+                     <AiFillTwitterCircle className=' cursor-pointer h-8 w-8 text-gray-50 bg-blue-500 rounded-full hover:bg-blue-600'/> 
+                  </div>
+                  {/* <SidebarRow className='mb-2' Icon={FiTwitter} title=""/> */}
+                  <SidebarRow Icon={HomeIcon} title="Home"/>
+                  <SidebarRow Icon={HashtagIcon} title="Explore"/>
+                  <SidebarRow Icon={BellIcon} title="Notifications"/>
+                  <SidebarRow Icon={MailIcon} title="Mail"/>
+                  <div className='nav__item--secondary'>
                      <SidebarRow Icon={BookmarkIcon} title="Bookmark"/>
                      <SidebarRow Icon={ViewListIcon} title="List"/>
-                     <SidebarRow Icon={UserIcon} title="Profile"/>
-                     <SidebarRow Icon={DotsHorizontalIcon} title="More"/>
                   </div>
-
-                  <div className="items-center">
-                     <div className="hidden xl:visible rounded-full h-12 w-full bg-blue-400 text-white text-2xl text-center py-1">Tweet</div>
-                     <div className="xl:hidden rounded-full h-16 w-16 bg-blue-400 "></div>
-                  </div>
-
+                  <SidebarRow Icon={UserIcon} title="Profile"/>
+                  <SidebarRow Icon={DotsHorizontalIcon} title="More"/>
                </div>
+
+               <div className="items-center">
+                  <div className="hidden xl:block rounded-full bg-blue-400 text-white text-lg font-semibold cursor-pointer hover:bg-blue-500 text-center py-3 px-16">Tweet</div>
+                  <div className="xl:hidden rounded-full h-16 w-16 bg-blue-400 "></div>
+               </div>
+
             </div>
             <div className='flex space-x-7 items-center hover:bg-gray-200 rounded-full px-5 py-2'>
                <div className='flex space-x-3'>
@@ -36,6 +44,8 @@ function Sidebar() {
                </div>
                <DotsHorizontalIcon className='hidden xl:block h-5 w-5'/>
             </div>
+         </div>
+
       </div>
    )
 }

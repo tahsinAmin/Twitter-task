@@ -76,40 +76,40 @@ function Posts() {
       <>
         {data.map(({id, name, username, verified, time, msgBody, msg, repeat, heart}) => (
             <div key={id} className="flex justify-between border border-r-0 border-l-0"> 
-                        <div className="h-auto w-1/5 py-4 flex justify-center">
-               <div className="rounded-full h-14 w-14 flex items-center justify-center bg-gray-400 "></div>
-            </div>
-            <div className="words p-4 flex flex-col justify-between w-4/5 space-y-2">
-               
-               <div>
-                  <div className="mb-1 flex justify-between items-center">
-                     <div className="flex items-center space-x-1 px-1">
-                        <h3 className='text-base font-bold text-gray-800 '>{name}</h3>
-                        <GoVerified color='blue'/>
-                        <h3 className='text-base font-normal text-gray-600'>{username}</h3>
-                     </div>
-                     <FiMoreHorizontal color='gray'/>
-                  </div>
-                  <div className="body">
-                     {msgBody}
-                  </div>
+               <div className="w-2/12 py-4 flex justify-center">
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center bg-gray-400 "></div>
                </div>
 
-               {/* Messages, Retweets, Hearts by others for this tweet */}
-               <div className='flex justify-between items-center'>
-                  <div className="flex w-12 justify-between items-center">
-                     <FiMessageCircle/> {msg}
+               <div className="words py-4  pr-4 flex flex-col justify-between w-10/12 space-y-2">               
+                  <div>
+                     <div className="mb-1 flex justify-between items-center">
+                        <div className="flex items-center space-x-1 px-1">
+                           <h3 className='text-base font-bold text-gray-800 '>{name}</h3>
+                           <GoVerified color='blue'/>
+                           <h3 className='text-base font-normal text-gray-600'>{username}</h3>
+                        </div>
+                        <FiMoreHorizontal color='gray'/>
+                     </div>
+                     <div className="body">
+                        {msgBody}
+                     </div>
                   </div>
-                  <div className="flex w-12 justify-between items-center">
-                     <FiRepeat/> {repeat}
+
+                  {/* Messages, Retweets, Hearts by others for this tweet */}
+                  <div className='flex justify-between items-center'>
+                     <div className="flex w-12 justify-between items-center">
+                        <FiMessageCircle/> {msg}
+                     </div>
+                     <div className="flex w-12 justify-between items-center">
+                        <FiRepeat/> {repeat}
+                     </div>
+                     <div className="flex w-12 justify-between items-center">
+                        <FiHeart/> {heart}
+                     </div>
+                     <FiUpload/>
                   </div>
-                  <div className="flex w-12 justify-between items-center">
-                     <FiHeart/> {heart}
-                  </div>
-                  <FiUpload/>
                </div>
             </div>
-         </div>
          ))} 
       </>
    )

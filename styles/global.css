@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    box-sizing: border-box;
+  }
+
+  .icon {
+    @apply hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-700 cursor-pointer hover:bg-gray-300;
+  }
+
+  .inputIcon {
+    @apply flex space-x-1 items-center hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer;
+  }
+
+  .navbar-icon {
+    @apply cursor-pointer p-2 hover:bg-gray-200 rounded-full;
+  }
+
+  .who-to-follow {
+    display: none;
+  }
+
+  .nav__item--secondary {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  @media (min-height: 750px) {
+    .who-to-follow {
+      display: block;
+    }
+  }
+
+  @media (min-height: 700px) {
+    .nav__item--secondary {
+      display: block;
+    }
+  }
+
+  @media (max-height: 500px), (max-width: 640px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  /* To show that the navbar is responsive in height as well */
+  /* .navbar {
+      display: block;
+    }
+
+    @media (min-width: 500px) {
+      .navbar {
+        display: none;
+      }
+    } */
+}

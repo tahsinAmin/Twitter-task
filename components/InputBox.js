@@ -5,12 +5,12 @@ import { AiOutlineFileGif } from 'react-icons/ai'
 function InputBox() {
    return (
       <div className="h-auto hidden md:flex justify-between pb-3">
-            <div className='md:w-2/12 pt-4 pl-5'>
+            <div className='md:w-2/12 pt-4 pl-1'>
                <UserCircleIcon className='h-16 w-16 mx-auto'/>
             </div>
-            <div className=' flex flex-col space-y-3 pt-8 md:w-10/12'>
+            <div className='flex flex-col space-y-3 pt-8 md:w-10/12'>
                <div className='flex flex-col space-y-3'>
-                  <textarea type="text" className='pr-4 text-2xl font-normal outline-none' placeholder="What's Happening"/>
+                  <input type="text" className='pr-4 text-2xl font-normal outline-none' placeholder="What's Happening"/>
                   {/* <div className='flex items-center space-x-1'>
                      <GlobeIcon className='h-5 inline'/>
                      <p>Everyone can reply</p>
