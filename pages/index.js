@@ -24,20 +24,3 @@ export default function Home() {
   )
 }
 
-
-
-
-
-// ___________BONUS_____________________
-// Click Home to scroll to the top
-// Sidebar showing active state
-// in md, when the height is small, the sidebar icons all don't show up, need to adjust ot with the height.
-// Widgets show more will extend the divs (Hints: Scrollbar hide)
-// Header home text will be cursor pointer which will reload the page.
-// Put the HEader Component outisde if I get time.
-//  Search input wil be out of widget as it stays it's place when scrolling.
-
-
-// ______________PROBLEM_____________________
-// At 640x699, both the sidebar and the navbar shows up
-
