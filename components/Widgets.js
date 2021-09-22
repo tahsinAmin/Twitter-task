@@ -54,9 +54,6 @@ import {
                <p className='text-xs font-semibold text-gray-500'>470K Tweets</p>
             </div>
 
-             
-
-
             <div className='px-4 py-4'>
                <span className='text-sm text-blue-500 hover:underline cursor-pointer'>Show more</span>
             </div>
@@ -170,6 +167,7 @@ import {
                   </div>
                </div>
             </div>
+            
 
             <div className='px-4 py-4'>
                <span className='text-sm text-blue-500 hover:underline cursor-pointer'>Show more</span>
