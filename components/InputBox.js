@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { EmojiHappyIcon, PhotographIcon } from '@heroicons/react/outline'
+import { EmojiHappyIcon, PhotographIcon, GlobeIcon } from '@heroicons/react/outline'
 import { AiOutlineFileGif } from 'react-icons/ai'
 import React, { useState, useEffect } from 'react';
 
@@ -31,21 +31,20 @@ function InputBox() {
                 value={tweetImp}
                 onChange={(e) => setTweetImp(e.target.value)}
                />
-               {/* <div className='flex items-center space-x-1'>
-                  <GlobeIcon className='h-5 inline'/>
-                  <p>Everyone can reply</p>
+               <div className={`${isTweeting? 'flex items-center space-x-1':'hidden'}`}>
+                  <GlobeIcon className='h-5 inline text-blue-500'/>
+                  <p className='text-blue-500 font-semibold'>Everyone can reply</p>
                </div>
-               <div className='border-b-2 w-full'></div> */}
+               <div className={`${isTweeting? 'border-b border-gray-100 w-full':'hidden'}`}></div>
             </div>
-            <div className='flex justify-between mt-0 align-middle'>
+            <div className='flex justify-between align-middle m0'>
                <div className="flex justify-between space-x-2 items-center">
                   <PhotographIcon className='h-6 text-blue-500 cursor-pointer hover:text-blue-600'/>
                   <AiOutlineFileGif size='1.4em' className='text-blue-500 cursor-pointer hover:text-blue-600'/>
                   <EmojiHappyIcon className='h-6 text-blue-500 cursor-pointer hover:text-blue-600'/>
                </div>
                <button
-                className={`py-3 mr-3 px-5  text-xs font-bold text-white rounded-full ${isTweeting? 'bg-blue-500': 'bg-blue-400'}`}
-               //  className="bg-blue-300 py-3 mr-3 px-5  text-xs font-bold text-white rounded-full"
+                className={`py-3 mr-3 px-5 text-xs font-bold text-white rounded-full ${isTweeting? 'bg-blue-500 cursor-pointer': 'bg-blue-400 cursor-default'}`}
                >Tweet</button>
             </div>
          </div>
