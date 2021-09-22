@@ -93,7 +93,7 @@ import {
                   <div className="">
                      <div className="flex justify-between"> 
                         <div className="flex justify-center">
-                                                      <Image src={`https://source.unsplash.com/50x50/?nature,water,mountain,landscape`}
+                           <Image src={`https://source.unsplash.com/50x50/?nature,water,mountain,landscape`}
                               width={50}
                               height={50}
                               layout="fixed"

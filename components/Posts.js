@@ -80,10 +80,10 @@ function Posts() {
       <>
         {data.map(({id, name, username, verified, time, msgBody, msg, repeat, heart}) => (
             <div key={id} className="flex justify-between border border-gray-100 border-r-0 border-l-0 hover:bg-gray-100 transition duration-700 ease-out"> 
-               <div className="w-2/12 py-4 flex justify-center h-auto">   
+               <div className="w-2/12 py-4 items-center">   
 
-                  <Tippy placement={'bottom'} theme={'light'} interactive={true} content={
-                     <div className="flex-col space-y-2 max-w-xs p-2">
+                  <Tippy arrow={false} delay={400} placement={'bottom'} theme={'light'} interactive={true} content={
+                     <div className="flex-col space-y-2 w-[300px] p-2">
                         <div className="flex justify-between space-x-2">
                            <div className="flex-col">
                               <Image src={`https://source.unsplash.com/50x50/?man`}
@@ -99,7 +99,7 @@ function Posts() {
                               <h3 className='text-base font-normal text-gray-600 truncate'>{username}</h3>
                            </div>
                            <div className="flex-col  justify-start pt-1">
-                           <button className="text-white bg-gray-800 rounded-full p-2 px-4">Follow</button>
+                              <button className="text-gray-900 font-semibold bg-white border border-gray-300 rounded-full p-2 px-4">Following</button>
                            </div>
                         </div>
                         <p className="">"We only see what we know" - John Wolfgang von Goethe</p>
@@ -118,7 +118,7 @@ function Posts() {
                         </div>
                      </div>
                   }>
-                     <div className="">
+                     <div className=" pl-2 sm:pl-6">
                      <Image src={`https://source.unsplash.com/50x50/?man`}
                         width={50}
                         height={50}
@@ -127,6 +127,7 @@ function Posts() {
                      />
                      </div>
                   </Tippy>
+                  
                </div>
 
                <div className="words py-4 pr-4 flex flex-col justify-between w-10/12 space-y-2">               

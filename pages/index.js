@@ -24,3 +24,6 @@ export default function Home() {
   )
 }
 
+
+// git remote add origin https://github.com/tahsinAmin/Twitter-task.git
+// git push -u origin main
